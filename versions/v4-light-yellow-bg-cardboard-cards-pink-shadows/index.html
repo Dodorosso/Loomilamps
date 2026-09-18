@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loomilamps — Upcycled Space-Age Lighting</title>
+<meta name="description" content="Loomilamps crafts nostalgic pop lighting by merging 3D-printing precision with upcycled everyday objects.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="nav-bubble">
+    <a href="#top" class="logo">Loomilamps<span class="logo-dot">.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#lamps">Lamps</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Handcrafted &middot; Upcycled &middot; Space-Age</p>
+        <h1 class="hero-title">Light, reloaded<br>from everyday junk.</h1>
+        <p class="hero-text">
+          Loomilamps merges precision 3D-printing with rescued, everyday objects to
+          create one-of-a-kind lamps — playful relics from a retro-futuristic tomorrow
+          that never quite arrived. Every piece is hand-finished, numbered, and built to
+          glow for decades.
+        </p>
+        <a href="#lamps" class="btn btn-primary">
+          <span>Shop the Collection</span>
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="porthole">
+          <div class="porthole-ring">
+            <div class="porthole-glass">
+              <div class="lamp-illustration" aria-hidden="true">
+                <div class="lamp-glow"></div>
+                <div class="lamp-shade"></div>
+                <div class="lamp-neck"></div>
+                <div class="lamp-base"></div>
+              </div>
+            </div>
+          </div>
+          <span class="porthole-bolt bolt-1"></span>
+          <span class="porthole-bolt bolt-2"></span>
+          <span class="porthole-bolt bolt-3"></span>
+          <span class="porthole-bolt bolt-4"></span>
+        </div>
+        <div class="hero-badge">Model 01<br>“Loom1”</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT SHOWCASE ===== -->
+  <section class="showcase" id="lamps">
+    <div class="section-heading">
+      <p class="eyebrow eyebrow-dark">The Collection</p>
+      <h2>Objects, reimagined.</h2>
+      <p class="section-sub">Every lamp starts as something else — a jug, a colander, a
+        forgotten toy — before it's rebuilt with 3D-printed armatures and rewired by hand.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card product-card--yellow product-card--featured">
+        <span class="card-tape" aria-hidden="true"></span>
+        <a href="product-loom1.html" class="product-card-link" aria-label="View Loom1 details">
+          <span class="tag">Flagship</span>
+          <div class="product-media">
+            <div class="mini-lamp mini-lamp--01" aria-hidden="true">
+              <div class="mini-glow"></div>
+              <div class="mini-shade"></div>
+              <div class="mini-neck"></div>
+              <div class="mini-base"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>Loom1</h3>
+            <p>A reclaimed glass jug fused with a lattice-printed shade. Warm dimmable
+              glow, solid oak foot, fully rewired &amp; certified.</p>
+            <div class="product-footer">
+              <span class="price">120,00&nbsp;€</span>
+              <span class="btn btn-small btn-dark">View details</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card product-card--pink">
+        <span class="card-tape" aria-hidden="true"></span>
+        <span class="tag tag-soon">Coming soon</span>
+        <div class="product-media">
+          <div class="mini-lamp mini-lamp--02" aria-hidden="true">
+            <div class="mini-glow"></div>
+            <div class="mini-shade mini-shade--round"></div>
+            <div class="mini-neck"></div>
+            <div class="mini-base"></div>
+          </div>
+        </div>
+        <div class="product-body">
+          <h3>Loom2 — “Satellite”</h3>
+          <p>Built from a vintage colander, orbited by a printed halo diffuser.
+            Next drop, limited to 30 pieces.</p>
+          <div class="product-footer">
+            <span class="price price-muted">Notify me</span>
+            <a href="#contact" class="btn btn-small btn-outline">Join waitlist</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card product-card--yellow">
+        <span class="card-tape" aria-hidden="true"></span>
+        <span class="tag tag-soon">In the lab</span>
+        <div class="product-media">
+          <div class="mini-lamp mini-lamp--03" aria-hidden="true">
+            <div class="mini-glow"></div>
+            <div class="mini-shade mini-shade--tall"></div>
+            <div class="mini-neck"></div>
+            <div class="mini-base mini-base--wide"></div>
+          </div>
+        </div>
+        <div class="product-body">
+          <h3>Loom3 — “Capsule”</h3>
+          <p>A thermos shell reborn as a warm bedside beacon. Currently in
+            prototyping — sketches dropping soon.</p>
+          <div class="product-footer">
+            <span class="price price-muted">Notify me</span>
+            <a href="#contact" class="btn btn-small btn-outline">Join waitlist</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== PHILOSOPHY ===== -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-card">
+      <p class="eyebrow eyebrow-dark">Our Philosophy</p>
+      <h2>Precision meets nostalgia.</h2>
+      <div class="philosophy-grid">
+        <div class="philosophy-text">
+          <p>
+            Loomilamps was born from a simple obsession: objects shouldn't die when
+            their first life ends. We rescue jugs, colanders, thermoses and forgotten
+            plastics from flea markets and attics, then give them a second purpose
+            through the precision of modern 3D-printing.
+          </p>
+          <p>
+            Every armature, socket housing and diffuser is designed digitally and
+            printed layer by layer — a space-age process wrapped around a very human,
+            very imperfect found object. The result is pop, tactile, and warm: lighting
+            that feels like it travelled back from a retro-future that never quite
+            happened.
+          </p>
+          <p>
+            No two lamps are identical. Each one carries the dents, patina and quirks
+            of its past life, matched with the clean geometry of digital fabrication —
+            proof that craft and technology glow brighter together.
+          </p>
+        </div>
+        <div class="philosophy-stats">
+          <div class="stat-chip">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Upcycled base objects</span>
+          </div>
+          <div class="stat-chip stat-chip--pink">
+            <span class="stat-number">3D</span>
+            <span class="stat-label">Printed armatures &amp; shades</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-number">1/1</span>
+            <span class="stat-label">Numbered, one-of-a-kind pieces</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-card">
+      <h2>Let's light something up.</h2>
+      <p>Questions about a piece, a custom commission, or a stockist near you?
+        Drop us a line and we'll get back within two days.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary btn-small">Send</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="logo logo--footer">Loomilamps<span class="logo-dot">.</span></span>
+    <p>&copy; 2026 Loomilamps. Handmade in small batches. All lamps rewired &amp; safety-tested.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

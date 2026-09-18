@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loom1 — Loomilamps</title>
+<meta name="description" content="Loom1: a reclaimed glass jug fused with a 3D-printed lattice shade. Handcrafted, numbered, and rewired by Loomilamps.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="nav-bubble">
+    <a href="index.html" class="logo">Loomilamps<span class="logo-dot">.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav">
+      <a href="index.html#lamps">Lamps</a>
+      <a href="index.html#philosophy">Philosophy</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb-wrap">
+    <a href="index.html#lamps" class="breadcrumb-link">&larr; Back to the collection</a>
+  </div>
+
+  <!-- ===== PRODUCT DETAIL ===== -->
+  <section class="product-detail">
+    <div class="product-detail-inner">
+
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="gallery-main">
+          <!-- Replace with <img src="assets/loom1-1.jpg" alt="Loom1 lamp, front view"> when photos are ready -->
+          <div class="gallery-placeholder" id="galleryMain" data-caption="Front view">
+            <div class="mini-lamp mini-lamp--01 mini-lamp--big" aria-hidden="true">
+              <div class="mini-glow"></div>
+              <div class="mini-shade"></div>
+              <div class="mini-neck"></div>
+              <div class="mini-base"></div>
+            </div>
+            <span class="placeholder-label">Photo coming soon</span>
+          </div>
+        </div>
+        <div class="gallery-thumbs" id="galleryThumbs">
+          <button type="button" class="gallery-thumb is-active" data-caption="Front view" aria-label="Show front view">1</button>
+          <button type="button" class="gallery-thumb" data-caption="Side profile" aria-label="Show side profile">2</button>
+          <button type="button" class="gallery-thumb" data-caption="Lit at dusk" aria-label="Show lamp lit at dusk">3</button>
+          <button type="button" class="gallery-thumb" data-caption="Detail: printed lattice shade" aria-label="Show shade detail">4</button>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="product-info">
+        <span class="tag">Flagship</span>
+        <h1>Loom1</h1>
+        <p class="price price-lg">120,00&nbsp;€</p>
+
+        <p class="product-lead">
+          A reclaimed glass jug, rescued from a flea market crate, fused with a
+          3D-printed lattice shade. Loom1 is the piece that started it all — a
+          proof that precision fabrication and imperfect found objects can glow,
+          quite literally, better together.
+        </p>
+
+        <a href="#contact-cta" class="btn btn-primary">
+          <span>Add to cart</span>
+        </a>
+
+        <div class="spec-card">
+          <h2>The details</h2>
+          <ul class="spec-list">
+            <li><strong>Base object:</strong> Hand-selected reclaimed glass jug, cleaned &amp; rewired</li>
+            <li><strong>Shade:</strong> 3D-printed PLA lattice diffuser, warm-white finish</li>
+            <li><strong>Foot:</strong> Solid oak, hand-oiled</li>
+            <li><strong>Bulb:</strong> Dimmable E27 LED included</li>
+            <li><strong>Cable:</strong> 2m fabric-braided cord, EU/UK plug on request</li>
+            <li><strong>Certification:</strong> CE rewired &amp; safety-tested</li>
+            <li><strong>Edition:</strong> Numbered, one-of-a-kind piece</li>
+          </ul>
+        </div>
+
+        <div class="spec-card spec-card--pink">
+          <h2>Care &amp; story</h2>
+          <p>
+            Every Loom1 carries the dents, patina and quirks of its former life as
+            a humble glass jug. Wipe the shade gently with a dry cloth — the
+            printed lattice is sturdy but enjoys a soft touch. Because each base
+            object is reclaimed individually, no two Loom1 lamps are perfectly
+            alike.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MINI CONTACT CTA ===== -->
+  <section class="contact" id="contact-cta">
+    <div class="contact-card">
+      <h2>Questions about Loom1?</h2>
+      <p>Shipping, customization, or just curious about the jug we used? Send us a note.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary btn-small">Send</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="logo logo--footer">Loomilamps<span class="logo-dot">.</span></span>
+    <p>&copy; 2026 Loomilamps. Handmade in small batches. All lamps rewired &amp; safety-tested.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

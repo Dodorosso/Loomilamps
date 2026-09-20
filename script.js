@@ -25,9 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('pointerleave', () => btn.classList.remove('is-pressed'));
   });
 
-  // Product gallery: swap the active thumbnail + caption (ready for real photos later)
+  // Product gallery: swap the active thumbnail + caption
   const galleryThumbs = document.getElementById('galleryThumbs');
   const galleryMain = document.getElementById('galleryMain');
+  const galleryCaption = document.getElementById('galleryCaption');
+  const galleryMainImg = document.getElementById('galleryMainImg');
+
   if (galleryThumbs && galleryMain) {
     galleryThumbs.querySelectorAll('.gallery-thumb').forEach((thumb) => {
       thumb.addEventListener('click', () => {
@@ -35,9 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         thumb.classList.add('is-active');
         const caption = thumb.dataset.caption || '';
         galleryMain.dataset.caption = caption;
+        if (galleryCaption) {
+          galleryCaption.textContent = caption;
+        }
         const label = galleryMain.querySelector('.placeholder-label');
         if (label) label.textContent = `${caption} — photo coming soon`;
-        // When real photos are added, swap galleryMain's <img src> here based on thumb.dataset.src
+        if (thumb.dataset.src && galleryMainImg) {
+          galleryMainImg.src = thumb.dataset.src;
+        }
       });
     });
   }

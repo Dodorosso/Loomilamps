@@ -1,3 +1,11 @@
+/* ==========================================================================
+   CONFIGURAZIONE IMMAGINI PRODOTTI (Modificabile facilmente a mano)
+   ========================================================================== */
+:root {
+  --loom1-img-off: 'assets/DSCF7122.JPG';
+  --loom1-img-on:  'assets/DSCF7031.JPG';
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +19,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Configurazione immagini Loom1 (Modificabile direttamente qui) */
+  :root {
+    --loom1-img-off: url('assets/DSCF7122.JPG');
+    --loom1-img-on:  url('assets/DSCF7031.JPG');
+  }
+</style>
 </head>
 <body>
 
@@ -85,12 +100,12 @@
 
     <div class="product-grid">
 
-      <article class="product-card product-card--yellow product-card--featured">
+      <article class="product-card product-card--yellow product-card--featured" data-img-off="assets/DSCF7122.JPG" data-img-on="assets/DSCF7031.JPG">
         <span class="card-tape" aria-hidden="true"></span>
         <a href="product-loom1.html" class="product-card-link" aria-label="View Loom1 details">
           <span class="tag">Flagship</span>
-          <div class="product-media product-media--img">
-            <img src="assets/DSCF7122.JPG" alt="Loom1 Lamp - Reclaimed glass jug with 3D-printed lattice shade" class="product-img">
+          <div class="product-media product-media--img product-media--interactive">
+            <img src="assets/DSCF7122.JPG" alt="Loom1 Lamp - Reclaimed glass jug with 3D-printed lattice shade" class="product-img product-img--switchable">
           </div>
           <div class="product-body">
             <h3>Loom1</h3>

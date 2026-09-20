@@ -25,6 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('pointerleave', () => btn.classList.remove('is-pressed'));
   });
 
+  // Interactive hover to light up lamp on cards
+  const interactiveCards = document.querySelectorAll('.product-media--interactive');
+  interactiveCards.forEach((card) => {
+    const img = card.querySelector('.product-img--switchable');
+    if (!img) return;
+    const imgOff = card.closest('.product-card').dataset.imgOff || img.src;
+    const imgOn = card.closest('.product-card').dataset.imgOn;
+
+    if (imgOn) {
+      card.addEventListener('mouseenter', () => {
+        img.src = imgOn;
+      });
+      card.addEventListener('mouseleave', () => {
+        img.src = imgOff;
+      });
+    }
+  });
+
   // Product gallery: swap the active thumbnail + caption
   const galleryThumbs = document.getElementById('galleryThumbs');
   const galleryMain = document.getElementById('galleryMain');
